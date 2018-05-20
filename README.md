@@ -24,7 +24,7 @@ Snapshot or if you have your Volumes named diffrent change the Following Lines:
 
 <<< if [ "$1" == "root" ]; then
 <<<     REGEX='.?(root)-([0-9]{4}-[0-9]{2}-[0-9]{2}).?'
-<<< elif [ "$1" == "root" ]; then
+<<< elif [ "$1" == "home" ]; then
 <<<     REGEX='.?(home)-([0-9]{4}-[0-9]{2}-[0-9]{2}).?'
 <<< else
 <<<     exit -1
@@ -49,7 +49,7 @@ For other Sizes change the following Lines to your needing:
 <<< SIZE="1G"
 <<< if [ "$1" == "root" ]; then
 <<<     SIZE=$ROOT_SIZE
-<<< elif [ "$1" == "root" ]; then
+<<< elif [ "$1" == "home" ]; then
 <<<     SIZE=$HOME_SIZE
 <<< else
 <<<     exit -1
